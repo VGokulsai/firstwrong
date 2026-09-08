@@ -1,0 +1,6 @@
+Find the sum of the first 20 terms of the AP 3, 7, 11, ...
+
+a = 3, d = 4, n = 20
+S_n = (n/2)[2a + (n - 1)d]
+S_20 = 10[6 + 20(4)]
+S_20 = 10[86] = 860

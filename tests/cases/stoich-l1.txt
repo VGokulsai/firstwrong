@@ -1,0 +1,6 @@
+What mass of water is formed when 4 g of hydrogen burns completely in oxygen? H = 1, O = 16
+
+H2 + O2 -> H2O
+Moles of H2 = 4/2 = 2
+2 moles of H2 give 2 moles of H2O
+Mass of H2O = 2 x 18 = 36 g

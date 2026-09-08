@@ -1,0 +1,6 @@
+A man of mass 60 kg stands on a weighing scale inside a lift that is accelerating downwards at 2 m/s^2. Find the reading of the scale in newtons. Take g = 10 m/s^2.
+
+The scale reads the normal force N on the man
+Taking downwards as positive: mg - N = ma
+N = m(g - a) = 60(10 - 2)
+N = 480 N

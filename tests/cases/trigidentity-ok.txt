@@ -1,0 +1,7 @@
+Prove that (1 + tan^2(theta))(1 - sin^2(theta)) = 1
+
+1 + tan^2(theta) = sec^2(theta)
+1 - sin^2(theta) = cos^2(theta)
+LHS = sec^2(theta) x cos^2(theta)
+sec(theta) = 1/cos(theta), so sec^2(theta) x cos^2(theta) = 1
+LHS = 1 = RHS

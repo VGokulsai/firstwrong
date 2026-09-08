@@ -1,0 +1,6 @@
+Two blocks of 3 kg and 5 kg are joined by a light string on a frictionless table. A horizontal force of 24 N is applied to the 5 kg block, pulling both. Find the tension in the string.
+
+Total mass = 3 + 5 = 8 kg
+a = F/m = 24/8 = 3 m/s^2
+For the 5 kg block: T = 5 x 3 = 15 N
+Tension = 15 N

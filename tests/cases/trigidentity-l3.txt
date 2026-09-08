@@ -1,0 +1,6 @@
+Prove that (1 - cos^2 A)/(sin A cos A) = tan A
+
+1 - cos^2 A = sin^2 A
+LHS = sin^2 A / (sin A cos A)
+LHS = sin A cos A
+LHS = tan A

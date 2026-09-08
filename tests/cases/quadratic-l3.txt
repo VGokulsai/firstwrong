@@ -1,0 +1,6 @@
+Solve 2x^2 - 7x + 3 = 0 using the quadratic formula
+
+a = 2, b = -7, c = 3
+D = b^2 - 4ac = 49 - 24 = 25
+x = (7 +/- 5)/2
+x = 6 or x = 1

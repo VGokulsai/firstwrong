@@ -1,0 +1,6 @@
+Calculate the mass of oxygen needed to burn 32 g of methane completely. C = 12, H = 1, O = 16
+
+CH4 + 2O2 -> CO2 + 2H2O
+Molar mass of CH4 = 12 + 4 = 16, so moles of CH4 = 32/16 = 2
+2 moles of CH4 need 4 moles of O2
+Mass of O2 = 4 x 32 = 128 g

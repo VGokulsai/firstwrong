@@ -1,0 +1,6 @@
+Find the volume occupied by 2 moles of an ideal gas at 27 degrees C and 1 atm. R = 0.0821 L atm / (mol K)
+
+PV = nRT
+V = nRT/P
+V = (2)(0.0821)(27)/1 = 4.43 L
+The volume is 4.43 L

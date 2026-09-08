@@ -1,0 +1,6 @@
+Find the sum of the first 20 terms of the AP 3, 7, 11, ...
+
+The 20th term is 3 + 19(4) = 79
+The sum of an AP is the number of terms times the average of the first and last term
+S_20 = 20 x (3 + 79)/2
+S_20 = 20 x 41 = 820

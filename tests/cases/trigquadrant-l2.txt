@@ -1,0 +1,6 @@
+If sin(theta) = 3/5 and theta lies in the second quadrant, find tan(theta)
+
+cos^2(theta) = 1 - sin^2(theta) = 1 - 9/25 = 16/25
+cos(theta) = 4/5
+tan(theta) = sin(theta)/cos(theta) = (3/5)/(4/5)
+tan(theta) = 3/4

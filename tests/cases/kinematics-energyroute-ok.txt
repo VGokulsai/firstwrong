@@ -1,0 +1,6 @@
+A stone is dropped from rest from a height of 45 m. Find the speed with which it hits the ground. Take g = 10 m/s^2.
+
+Energy is conserved, so mgh = (1/2)mv^2
+v^2 = 2gh
+v^2 = 2(10)(45) = 900
+v = 30 m/s

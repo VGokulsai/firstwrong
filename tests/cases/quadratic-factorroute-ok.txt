@@ -1,0 +1,7 @@
+Solve 3x^2 - 10x + 8 = 0
+
+The two numbers with product 3 x 8 = 24 and sum -10 are -4 and -6
+3x^2 - 4x - 6x + 8 = 0
+x(3x - 4) - 2(3x - 4) = 0
+(3x - 4)(x - 2) = 0
+x = 4/3 or x = 2

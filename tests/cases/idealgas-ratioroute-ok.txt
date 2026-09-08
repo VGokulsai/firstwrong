@@ -1,0 +1,6 @@
+A gas occupies 500 mL at 27 degrees C and 1 atm. Find its volume at 127 degrees C at the same pressure.
+
+The pressure and the amount of gas are unchanged, so V/T stays constant
+T1 = 300 K and T2 = 400 K
+V2 = 500 x 400/300
+V2 = 666.7 mL

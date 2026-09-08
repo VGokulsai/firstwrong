@@ -1,0 +1,5 @@
+A car moving at 72 km/h is brought to rest in 5 s. Find its acceleration.
+
+u = 72 km/h, v = 0, t = 5 s
+a = (v - u)/t = (0 - 72)/5 = -14.4 m/s^2
+The acceleration is 14.4 m/s^2 opposite to the motion

@@ -1,0 +1,7 @@
+Calculate the mass of carbon dioxide produced when 24 g of carbon burns completely in oxygen. C = 12, O = 16
+
+C + O2 -> CO2
+Moles of C = 24/12 = 2
+1 mole of C gives 1 mole of CO2, so moles of CO2 = 2
+Molar mass of CO2 = 12 + 16 = 28
+Mass of CO2 = 2 x 28 = 56 g

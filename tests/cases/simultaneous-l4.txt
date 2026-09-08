@@ -1,0 +1,7 @@
+Solve 3x + 2y = 16 and 5x - 2y = 8
+
+Adding the two equations: 8x = 24
+x = 3
+3(3) + 2y = 16
+2y = 16 + 9 = 25
+y = 12.5

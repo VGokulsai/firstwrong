@@ -1,0 +1,6 @@
+A ball of mass 0.5 kg is thrown vertically upwards at 20 m/s. Using the work-energy theorem, find the maximum height it reaches. Take g = 10 m/s^2.
+
+At the highest point the speed is zero, so the change in KE = 0 - (1/2)(0.5)(20^2) = -100 J
+Over a rise of h the work done by gravity = -mgh = -(0.5)(10)h = -5h
+-5h = -100
+h = 20 m

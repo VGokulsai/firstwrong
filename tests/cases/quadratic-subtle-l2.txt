@@ -1,0 +1,6 @@
+Solve x^2 + 5x - 14 = 0 using the quadratic formula
+
+a = 1, b = 5, c = -14
+D = b^2 - 4ac = 25 - 56 = -31
+D is negative
+So the equation has no real roots

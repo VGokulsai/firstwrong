@@ -1,0 +1,6 @@
+A box is dragged 5 m along a floor by a force of 10 N acting at 60 degrees to the horizontal. Find the work done by the force.
+
+W = F d cos(theta)
+W = 10 x 5 x cos(60)
+W = 50 x (sqrt(3)/2) = 43.3 J
+Work done = 43.3 J
