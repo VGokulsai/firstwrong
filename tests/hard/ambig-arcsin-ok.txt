@@ -1,0 +1,6 @@
+Evaluate sin^-1(sin 150 degrees), giving the answer in degrees
+
+sin 150 = sin(180 - 150) = sin 30 = 1/2
+The principal value of sin^-1 lies between -90 and 90 degrees
+sin^-1(1/2) = 30 degrees
+So sin^-1(sin 150 degrees) = 30 degrees

@@ -1,0 +1,6 @@
+Two forces of 3 N and 4 N act at a point with an angle of 60 degrees between them. Find the magnitude of the resultant
+
+R^2 = P^2 + Q^2 + 2PQ cos(theta)
+R^2 = 3^2 + 4^2 + 2 x 3 x 4 x cos 60
+cos 60 = 1/2, so R^2 = 25 + 24 = 49
+R = 7 N

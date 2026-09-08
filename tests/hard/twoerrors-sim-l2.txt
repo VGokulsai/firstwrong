@@ -1,0 +1,9 @@
+Solve the simultaneous equations 3x + 2y = 16 and x - y = 3
+
+3x + 2y = 16 ... (i) and x - y = 3 ... (ii)
+From (ii), x = 3 - y
+Substituting in (i): 3(3 - y) + 2y = 16
+9 - 3y + 2y = 16
+9 - y = 16
+y = 7
+x = 3 - 7 = -4

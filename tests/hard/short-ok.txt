@@ -1,0 +1,4 @@
+Find the 10th term of the AP 5, 9, 13, ...
+
+a = 5 and d = 4
+a10 = a + 9d = 5 + 9 x 4 = 41

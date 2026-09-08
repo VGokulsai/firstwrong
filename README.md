@@ -73,6 +73,29 @@ The last two matter most. A checker that invents an error in correct working,
 or that punishes a valid shortcut for not being the textbook route, is worse
 than no checker.
 
+## Where it stops being reliable
+
+Measured on 19 cases written to break it, each re-sampled several times.
+
+It does not fail at locating an error. 8 for 8 on the hard set, including two
+errors in one working (it names the first, not the louder second), a wrong
+step that cancels out so the final answer is right, a line that is
+arithmetically fine but logically unjustified, and ambiguous notation. Zero
+false positives across six correct workings written to look wrong.
+
+It failed at one boundary only: deciding whether the problem is answerable at
+all. A problem with an impossible premise came back as clean working in 3 of 5
+runs, because the model treated "I can prove this has no solution" as having
+solved it. The student would read a pass. That is now spelled out in the
+prompt - showing a problem has no answer is not solving it - and it blocks
+5 for 5. Under-specified problems went the same way, and a correct working
+that answers a different question than the one asked no longer draws a line
+number.
+
+The same answer is not guaranteed twice. Three cases changed verdict across
+identical runs before the fix. Treat any single result as a prompt to look,
+not a proof.
+
 ## Limits
 
 - You type the working. No photo of handwriting - OCR on handwritten maths is

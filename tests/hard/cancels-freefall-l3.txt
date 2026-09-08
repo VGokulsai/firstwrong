@@ -1,0 +1,6 @@
+A stone is dropped from rest from a height of 45 m. Find the time it takes to reach the ground. Take g = 10 m/s^2
+
+u = 0, so h = (1/2)gt^2 gives 45 = (1/2)(10)t^2
+45 = 5t^2
+t^2 = 45/5 = 8
+t = 3 s

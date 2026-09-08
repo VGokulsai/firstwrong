@@ -67,8 +67,18 @@ SYSTEM = (
     'null if every line is correct>, "confident": true|false}\n\n'
     "first_wrong_line is the first line whose content does not follow from "
     "the lines before it and the problem. A line that is merely inelegant, "
-    "unsimplified, or a different valid route is NOT wrong. If you cannot "
-    "solve the problem yourself, set solvable false; do not guess a line. "
+    "unsimplified, or a different valid route is NOT wrong.\n\n"
+    "Set solvable FALSE whenever the problem cannot be answered as asked: "
+    "you cannot solve it, it is missing information you would need, or its "
+    "premise is impossible or self-contradictory. Showing that a problem "
+    "has no answer is NOT solving it - the student still has no answer, and "
+    "a clean sheet would tell them their working was fine. Never guess a "
+    "line to avoid saying false.\n\n"
+    "Working that is correct but answers a DIFFERENT question than the "
+    "one asked has no wrong line. Every step can follow from the last "
+    "while the whole thing answers the wrong question, and naming a line "
+    "sends the student to a line where there is nothing to find. Return "
+    "null for that.\n\n"
     "Do not include a solution, an explanation, a hint, or any other field."
 )
 

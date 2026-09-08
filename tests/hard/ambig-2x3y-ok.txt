@@ -1,0 +1,6 @@
+If x = 6 and y = 2, find the value of 2x/3y
+
+2x/3y = (2x)/(3y)
+= (2 x 6)/(3 x 2)
+= 12/6
+= 2

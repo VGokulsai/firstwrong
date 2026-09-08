@@ -1,0 +1,6 @@
+4 g of H2 reacts with 32 g of O2 to form water. Which is the limiting reagent? H = 1, O = 16
+
+2H2 + O2 -> 2H2O
+Moles of H2 = 4/2 = 2 and moles of O2 = 32/32 = 1
+The ratio required is 2 : 1 and we have 2 : 1, so O2 is the limiting reagent
+The mass of water formed is 2 x 18 = 36 g

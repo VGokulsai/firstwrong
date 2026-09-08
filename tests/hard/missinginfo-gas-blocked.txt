@@ -1,0 +1,5 @@
+A gas occupies 2 litres. Find the volume it occupies after it is heated at constant pressure
+
+At constant pressure V1/T1 = V2/T2
+2/T1 = V2/T2
+V2 = 2 x T2/T1

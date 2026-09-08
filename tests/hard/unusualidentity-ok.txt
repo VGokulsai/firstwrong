@@ -1,0 +1,7 @@
+Prove that sin(theta)/(1 + cos theta) = (1 - cos theta)/sin(theta) for 0 < theta < 180 degrees
+
+For 0 < theta < 180, sin theta is not 0 and 1 + cos theta is not 0, so both denominators are non-zero
+The statement is therefore equivalent to sin^2(theta) = (1 + cos theta)(1 - cos theta)
+(1 + cos theta)(1 - cos theta) = 1 - cos^2(theta)
+1 - cos^2(theta) = sin^2(theta)
+Both sides are equal, so the identity holds

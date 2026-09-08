@@ -1,0 +1,6 @@
+If a = 3 and b = 4, evaluate ab^2
+
+ab^2 with a = 3 and b = 4
+ab^2 = (ab)^2
+= (3 x 4)^2
+= 144

@@ -1,0 +1,7 @@
+A projectile is fired at 40 m/s at 30 degrees to the horizontal. Find its time of flight. Take g = 10 m/s^2
+
+u = 40 m/s at 30 degrees, so the vertical component is u_y = 40 sin 30 = 20 m/s
+At the highest point the vertical velocity is zero
+Using v^2 = u_y^2 - 2gH with v = 0: 0 = 400 - 2(10)H
+20H = 400
+H = 20 m

@@ -1,0 +1,7 @@
+Calculate the mass of 0.25 mol of CaCO3. Ca = 40, C = 12, O = 16
+
+Molar mass of CaCO3 = Ca + C + 3 x O
+= 40 + 12 + 48
+= 90 g/mol
+Mass = moles x molar mass = 0.25 x 90
+= 2250 g

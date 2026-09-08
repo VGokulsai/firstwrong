@@ -1,0 +1,6 @@
+In triangle ABC, angle A = 50 degrees and angle B = 60 degrees. Find angle C
+
+A + B + C = 180
+50 + 60 + C = 180
+Since the triangle is isosceles, C = 70
+C = 70 degrees

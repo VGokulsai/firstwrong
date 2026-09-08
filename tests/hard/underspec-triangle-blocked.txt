@@ -1,0 +1,5 @@
+A triangle has a base of 10 cm. Find its area
+
+Area = (1/2) x base x height
+Area = (1/2) x 10 x h
+Area = 5h cm^2
