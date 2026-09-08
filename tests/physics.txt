@@ -1,0 +1,6 @@
+A body of mass 2 kg moving at 6 m/s is brought to rest by a constant force in 3 s. Find the work done by the force.
+
+Initial KE = (1/2)mv^2
+Initial KE = (1/2)(2)(6^2)
+Initial KE = (1/2)(2)(6) = 6 J
+Work done = change in KE = 0 - 6 = -6 J

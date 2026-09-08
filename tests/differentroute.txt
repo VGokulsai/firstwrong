@@ -1,0 +1,6 @@
+Solve x^2 - 5x + 6 = 0
+
+x^2 - 5x + 6 = 0
+Sum of roots = 5, product = 6
+Roots are 2 and 3
+x = 2 or x = 3
