@@ -1,6 +1,7 @@
 # firstwrong
 
-Where your working goes wrong. Not what the answer is.
+Tells you the first line of your working that is wrong. Nothing else: no
+solution, no next step, no hint about what is wrong with the line.
 
 ```
 py -3 firstwrong.py working.txt
@@ -13,41 +14,41 @@ Everything up to line 3 is correct.
     4. 3x = 29
 ```
 
-No solution. No next step. No hint about what is wrong with line 4. You go
-back and look at line 4 yourself, which is the part that makes it stick.
+You go back and look at line 4 yourself, which is the part that makes it stick.
+Standard library only. It calls the `claude` CLI once per check.
 
-## Why it refuses
+## What it is not
 
-Every homework tool solves the problem for you, which is why using one leaves
-you no better at the subject. Being handed a correct solution teaches you
-nothing - you already know that from every worked example you have read and
-forgotten. Finding your own mistake at a known location is different.
+- Not a solver. It never prints an answer, an explanation, or a hint.
+- Not a grader of the question. It checks that each line follows from the last.
+  It does not check that you answered the question that was asked.
+- Not an OCR tool. You type the working; no photo of handwriting.
+- Not deterministic. One model call per check, so the same input can give a
+  different verdict twice. Treat any single result as a prompt to look, not a
+  proof.
 
 ## The refusal is structural, not a promise
 
-The model does solve the problem internally, because it has to in order to
-compare. But `ask()` reads exactly three values out of the reply: solvable, a
-line number, and a confidence flag. A solution, an explanation or a hint may
-well be in the response - it goes out of scope unread, and there is no code
-path anywhere that prints it.
-
-A prompt asking the model not to explain is a request. Not reading the field
-is a guarantee.
+The model solves the problem internally, because it has to in order to compare.
+But `ask()` reads exactly three values out of the reply: `solvable`, a line
+number, and a confidence flag. Any solution, explanation, or hint the model
+returns sits in the discarded data and goes out of scope unread. There is no
+code path anywhere that prints it. A prompt asking the model not to explain is
+a request; not reading the field is a guarantee.
 
 ## It never says "looks fine"
 
-- **Cannot solve it** -> BLOCKED. "That is not the same as your working being
-  correct."
-- **No wrong line** -> "each line follows from the one before, not that the
-  answer is what the question wanted." Correct steps to the wrong question is
-  still wrong, and this tool cannot tell you that.
-- **Points outside the working** -> BLOCKED. An answer that does not fit the
+- Cannot solve it -> `BLOCKED`. That is not the same as your working being
+  correct.
+- No wrong line -> each line follows from the one before, not that the answer
+  is what the question wanted.
+- Points outside the working -> `BLOCKED`. An answer that does not fit the
   working is not an answer.
-- **Low confidence** -> says so, and tells you to check it yourself.
+- Low confidence -> says so, and tells you to check it yourself.
 
 ## Format
 
-Problem, blank line, then your working, one step per line.
+Problem, a blank line, then your working, one step per line.
 
 ```
 Solve 3x + 7 = 22 for x
@@ -58,52 +59,31 @@ Solve 3x + 7 = 22 for x
 x = 29/3
 ```
 
-`--example` writes that file. `--check` tests the prerequisites.
+`--example` writes that file. `--check` tests that `claude` is present. Working
+over 200 lines or 20,000 characters is refused rather than truncated, because a
+silent cut would renumber the lines and point at the wrong one.
 
-## Tested
+## Tests
 
-| case | expected | got |
-|---|---|---|
-| sign error on line 2 | line 2 | line 2 |
-| physics, dropped the square in (1/2)mv^2 | line 3 | line 3 |
-| entirely correct working | no wrong line | no wrong line |
-| valid but unusual route (sum and product of roots) | no wrong line | no wrong line |
+The cases are graded by running the model live, so a run costs money (about
+$0.002 per case) and results vary run to run.
 
-The last two matter most. A checker that invents an error in correct working,
-or that punishes a valid shortcut for not being the textbook route, is worse
-than no checker.
+```
+py -3 score.py               25 topic cases in tests/cases/
+py -3 tests/hard/hard.py     19 cases written to break it
+```
 
-## Where it stops being reliable
+The 19 adversarial cases are 10 with a planted error on a known line, 6 correct
+workings written to look wrong, and 3 that are unanswerable and must come back
+`BLOCKED`. Each case's expectation and reasoning is the comment above it,
+written before anything ran and not edited after. The correct-working and
+unanswerable cases matter most: a checker that invents an error in correct
+work, or passes an unanswerable problem as clean, is worse than no checker.
 
-Measured on 19 cases written to break it, each re-sampled several times.
+The one boundary it failed at was deciding whether a problem is answerable at
+all. A problem with an impossible premise came back clean because the model
+treated "I can prove this has no solution" as having solved it. That is now
+spelled out in the prompt.
 
-It does not fail at locating an error. 8 for 8 on the hard set, including two
-errors in one working (it names the first, not the louder second), a wrong
-step that cancels out so the final answer is right, a line that is
-arithmetically fine but logically unjustified, and ambiguous notation. Zero
-false positives across six correct workings written to look wrong.
-
-It failed at one boundary only: deciding whether the problem is answerable at
-all. A problem with an impossible premise came back as clean working in 3 of 5
-runs, because the model treated "I can prove this has no solution" as having
-solved it. The student would read a pass. That is now spelled out in the
-prompt - showing a problem has no answer is not solving it - and it blocks
-5 for 5. Under-specified problems went the same way, and a correct working
-that answers a different question than the one asked no longer draws a line
-number.
-
-The same answer is not guaranteed twice. Three cases changed verdict across
-identical runs before the fix. Treat any single result as a prompt to look,
-not a proof.
-
-## Limits
-
-- You type the working. No photo of handwriting - OCR on handwritten maths is
-  unreliable and would fail silently, which is the one failure mode this
-  codebase refuses.
-- It checks that each line follows from the last. It does not check that you
-  answered the question that was asked.
-- One model call per check, on the Claude subscription with the flags that
-  strip CLAUDE.md, skills and plugins out of the request.
-
-Standard library only.
+Standard library only. The `claude` call runs with the flags that strip
+CLAUDE.md, skills, and plugins out of the request.
